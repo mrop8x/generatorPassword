@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test HTML</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <form>
+        <h1>Generate Password:</h1>
+        <label for="passwordLength">Enter your password length</label><br>
+        <input type="number" id="passwordLength" value="10" min="6"><br>
+        <input type="checkbox" id="lowerCaseChars" name="chars">
+        <label for="lowerCaseChars">Include LowerCase Charaters</label><br>
+        <input type="checkbox" id="upperCaseChars" name="chars">
+        <label for="upperCaseChars">Include UpperCase Charaters</label><br>
+        <input type="checkbox" id="includeNumbers" name="chars">
+        <label for="includeNumbers">Include Numbers</label><br>
+        <input type="checkbox" id="includeSymbols" name="chars">
+        <label for="includeSymbols">Include Symbols</label><br>
+        <button type="button" onclick="generatorPassword()">Submit</button>
+        <div id="passwordResult"></div>
+    </form>
+</body>
+</html>
